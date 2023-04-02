@@ -30,7 +30,7 @@ const datosBusqueda = {
 
 document.addEventListener('DOMContentLoaded',() => {
     // muestra los datos de las pizzas en el html
-   mostrarPizzas(pizzasInStock);
+   //mostrarPizzas(pizzasInStock);
     
   
     })
@@ -89,26 +89,28 @@ function mostrarPizzas(pizzas) {
     limpiarHtml(); // Para elimnar el Html previo
     pizzas.forEach(pizza => {
       const{tamanio, porciones, bebida, extraqueso, ingrediente1, ingrediente2, ingrediente3, imagen} = pizza;
-      const imagePlusDescription = document.createElement('div');
+      
       const imageContainer = document.createElement('picture');
-      imagePlusDescription.classList.add('flex', 'flex-col',  'md:flex-row', 'overflow-hidden', 'md:gap-2');
       const imagePizza = document.createElement('img');
       const pizzaParrafo = document.createElement('P');
+      const imagePlusDescription = document.createElement('div');
+      
+      imageContainer.classList.add('p-2');
+      
       imagePizza.src = imagen;
-      // imagePizza.classList.add('md:w-2/6', 'h-5/5');
       imagePizza.classList.add('object-cover', 'md:w-full');
+      
       pizzaParrafo.textContent = 
       ` 
       Tamaño : ${tamanio},  Porciones : ${porciones}, Bebida :  ${bebida}, Extraqueso: ${extraqueso}, Ingrediente 1 : ${ingrediente1}, Ingrediente 2 : ${ingrediente2}, Ingrediente 3 : ${ingrediente3}
       `;
-      pizzaParrafo.classList.add('text-red-600');
-      pizzaParrafo.classList.add('my-3', 'bg-gray-50');
-      imageContainer.classList.add('p-1');
+
+      pizzaParrafo.classList.add('my-3', 'bg-gray-50', 'flex', 'justify-center', 'items-center');
       imageContainer.appendChild(imagePizza)
+      imagePlusDescription.classList.add('flex', 'flex-col',  'md:flex-row-reverse', 'overflow-hidden', 'md:gap-2', 'md:p-2');
       imagePlusDescription.appendChild(imageContainer);
       imagePlusDescription.appendChild(pizzaParrafo);
-      // resultadoContainer.appendChild(imagePizza); 
-      // resultadoContainer.appendChild(pizzaParrafo); 
+ 
        resultadoContainer.appendChild(imagePlusDescription); 
       })
   }
@@ -125,8 +127,7 @@ function limpiarHtml() {
   // FUNCION 3 - Filtra la Búsqueda Total
 
 function filtrarPizza() {
-  // const {tamanio, porciones} = datosBusqueda;
-  //  const resultado = pizzasInStock.filter(pizza=>pizza.porciones === porciones);
+
 
     const resultado = pizzasInStock.filter(filtrarTamanio).filter(filtrarPorciones).filter(filtrarBebida).filter(filtrarExtraqueso).filter(filtrarIngrediente1).filter(filtrarIngrediente2).filter(filtrarIngrediente3)
     ;
