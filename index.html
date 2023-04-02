@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Filter Order</title>
+    <!-- Script tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800">
+    <header
+      class="header p-7 bg-gray-900 text-center text-2xl font-bold text-yellow-200"
+    >
+      <h1>Welcome to Pizza Online - Home Taste</h1>
+    </header>
+    <main
+      class="main p-5 h-screen ont-bold text-xl text-amber-100 text-3xl font-bold bg-[url('./images/p4.jpg')] bg-no-repeat bg-center bg-cover"
+    >
+      <p class="m-auto text-center bg-gray-900 md:w-3/5 p-3">
+        Selecciona a tu gusto la gran variedad de Pizzas que tenemos
+      </p>
+      <div
+        class="formContainer w-12/12 m-auto mt-10 text-center flex justify-center"
+      >
+        <form
+          action="#"
+          class="form p-1flex flex-col justify-center items-center w-11/12 md:w-3/5 m-auto border-black border-2 p-2 bg-orange-300 text-gray-600 text-xl shadow-md shadow-gray-950"
+        >
+          <div
+            class="upSelectors flex flex-col justify-center items-center md:flex-row md:w-3/4 gap-2 m-auto mb-4"
+          >
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="tamaño">Tamaño</label>
+              <select
+                name="tamaño"
+                id="tamaño"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="grande">grande</option>
+                <option value="mediana">mediana</option>
+                <option value="personal">personal</option>
+                <option value="porcion">porcion</option>
+              </select>
+            </div>
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="porciones">Porciones</label>
+              <select
+                name="porciones"
+                id="porciones"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="bebida">Bebida</label>
+              <select
+                name="bebida"
+                id="bebida"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+              </select>
+            </div>
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="extraqueso">Extraqueso</label>
+              <select
+                name="extraqueso"
+                id="extraqueso"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="downSelectors flex flex-col justify-center items-center md:flex-row md:w-3/4 gap-2 m-auto"
+          >
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="ingrediente1">Ingrediente 1</label>
+              <select
+                name="ingrediente1"
+                id="ingrediente1"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="pollo">Pollo</option>
+                <option value="carne">Carne</option>
+                <option value="salami">Salami</option>
+              </select>
+            </div>
+            <div class="seleccionTopic flex flex-col w-4/5 border-blue-500">
+              <label for="ingrediente2">Ingrediente 2</label>
+              <select
+                name="ingrediente2"
+                id="ingrediente2"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="champignones">Champiñones</option>
+                <option value="maiz">Maiz</option>
+                <option value="pinia">Piña</option>
+                <option value="verdura">Verdura</option>
+              </select>
+            </div>
+            <div class="seleccionTopic flex flex-col w-4/5">
+              <label for="ingrediente3">Ingrediente 3</label>
+              <select
+                name="ingrediente3"
+                id="ingrediente3"
+                class="border-black border-2 w-auto p-1 bg-red bg-cover"
+                placeholder="oeoeoe"
+              >
+                <option value="">Seleccione</option>
+                <option value="tomate">Tomate</option>
+                <option value="jamon">Jamón</option>
+                <option value="picante">Picante</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <p class="m-5 text-2xl text-center">Resultado de tu Búsqueda</p>
+
+      <section
+        class="results p-5 text-gray-900 font-normal w-11/12 md:w-8/10 m-auto"
+      >
+        <div id="resultadoContainer" class="bg-gray-400 p-2 md:w-4/6 m-auto">
+          <!-- <p class="bg-gray-50 mb-2 p-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, nisi
+            dolor dolorem doloremque a quaerat. Consectetur, omnis reiciendis
+            perferendis tempore ratione impedit voluptates eaque magni velit!
+            Suscipit minus mollitia nihil?
+          </p>
+          <p class="bg-gray-50 mb-2 p-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, nisi
+            dolor dolorem doloremque a quaerat. Consectetur, omnis reiciendis
+            perferendis tempore ratione impedit voluptates eaque magni velit!
+            Suscipit minus mollitia nihil?
+          </p>
+          <p class="bg-gray-50 mb-2 p-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, nisi
+            dolor dolorem doloremque a quaerat. Consectetur, omnis reiciendis
+            perferendis tempore ratione impedit voluptates eaque magni velit!
+            Suscipit minus mollitia nihil?
+          </p> -->
+        </div>
+      </section>
+    </main>
+    <script src="./js/db.js"></script>
+    <script src="./js/myScript.js"></script>
+  </body>
+</html>
