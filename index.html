@@ -25,6 +25,7 @@
       >
         <form
           action="#"
+          id="formulario"
           class="form p-1flex flex-col justify-center items-center w-11/12 md:w-3/5 m-auto border-black border-2 p-2 bg-orange-300 text-gray-600 text-xl shadow-md shadow-gray-950 rounded-md"
         >
           <div
@@ -117,9 +118,8 @@
               >
                 <option value="">Seleccione</option>
                 <option value="champignones">Champiñones</option>
-                <option value="maiz">Maiz</option>
-                <option value="pinia">Piña</option>
-                <option value="verdura">Verdura</option>
+                <option value="pinia">piña</option>
+                <option value="maiz">maiz</option>
               </select>
             </div>
             <div class="seleccionTopic flex flex-col w-4/5">
@@ -137,6 +137,13 @@
               </select>
             </div>
           </div>
+          <button
+            type="reset"
+            id
+            class="py-2 bg-orange-500 w-2/6 rounded-md mt-4 text-yellow-200"
+          >
+            Limpiar Selección
+          </button>
         </form>
       </div>
 

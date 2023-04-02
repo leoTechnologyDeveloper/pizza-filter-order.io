@@ -9,6 +9,7 @@
  const selectIngrediente2  = document.querySelector('#ingrediente2');
  const selectIngrediente3  = document.querySelector('#ingrediente3');
  const resultadoContainer = document.querySelector('#resultadoContainer');
+ const btnReset = document.querySelector("#formulario button[type='reset']");
  
 
 // OBJETOS **************************************************
@@ -80,6 +81,10 @@ selectTamanio.addEventListener('change', e => {
     filtrarPizza();
   })
 
+  btnReset.addEventListener('click', function(e) {
+    resetearFormulario();
+    limpiarHtml();
+  });  
   
 // FUNCIONES **************************************************
 
@@ -225,4 +230,16 @@ function filtrarIngrediente3(pizza) {
       return pizza.ingrediente3 === ingrediente3;
     }
       return pizza;
+  }
+
+ // FUNCION 12 - Resetear Formulario
+  function resetearFormulario() {
+    datosBusqueda.porciones = "";
+    datosBusqueda.bebida = "";
+    datosBusqueda.extraqueso = "";
+    datosBusqueda.ingrediente1 = "";
+    datosBusqueda.ingrediente2 = "";
+    datosBusqueda.ingrediente3 = "";
+    // formulario.reset();
+    
   }
