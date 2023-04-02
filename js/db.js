@@ -10,7 +10,7 @@ const pizzasInStock = [
 		ingrediente2: 'champignon',
 		ingrediente3: 'jamon',
 		extraqueso: 'no',
-		imagen:'../images/1.jpg'
+		imagen:'./images/1.jpg'
 	},
 	{ 
         tamanio: 'mediana', 
@@ -20,7 +20,7 @@ const pizzasInStock = [
         ingrediente2: 'piña', 
         ingrediente3: 'maiz', 
         extraqueso: 'si',
-		imagen:'../images/2.jpg' 
+		imagen:'./images/2.jpg' 
     },
 	{
 		tamanio: 'personal',
@@ -30,7 +30,7 @@ const pizzasInStock = [
 		ingrediente2: 'carne',
 		ingrediente3: 'champignon',
 		extraqueso: 'si',
-		imagen:'../images/3.jpg'
+		imagen:'./images/3.jpg'
 	},
 	{ 
         tamanio: 'mediana', 
@@ -40,7 +40,7 @@ const pizzasInStock = [
         ingrediente2: 'carne', 
         ingrediente3: 'jamon', 
         extraqueso: 'si',
-		imagen:'../images/4.jpg' 
+		imagen:'./images/4.jpg' 
     },
 	{
 		tamanio: 'grande',
@@ -50,7 +50,7 @@ const pizzasInStock = [
 		ingrediente2: 'tomate',
 		ingrediente3: 'champignon',
 		extraqueso: 'si',
-		imagen:'../images/5.jpg'
+		imagen:'./images/5.jpg'
 	},
 	{
 		tamanio: 'Porción',
@@ -60,7 +60,7 @@ const pizzasInStock = [
 		ingrediente2: 'salami',
 		ingrediente3: 'picante',
 		extraqueso: 'si',
-		imagen:'../images/6.jpg'
+		imagen:'./images/6.jpg'
 	},
 	{
 		tamanio: 'grande',
@@ -70,7 +70,7 @@ const pizzasInStock = [
 		ingrediente2: 'maiz',
 		ingrediente3: 'salami',
 		extraqueso: 'no',
-		imagen:'../images/7.jpg'
+		imagen:'./images/7.jpg'
 	},
 	{ 
         tamanio: 'personal', 
@@ -80,7 +80,7 @@ const pizzasInStock = [
         ingrediente2: 'salami', 
         ingrediente3: 'verdura', 
         extraqueso: 'no',
-		imagen:'../images/8.jpg' 
+		imagen:'./images/8.jpg' 
     },
 	{ 
         tamanio: 'mediana', 
@@ -90,7 +90,7 @@ const pizzasInStock = [
         ingrediente2: 'piña', 
         ingrediente3: 'jamon', 
         extraqueso:   'no',
-		imagen:'../images/9.jpg' 
+		imagen:'./images/9.jpg' 
     },
 	{
 		tamanio: 'Porción',
@@ -100,7 +100,7 @@ const pizzasInStock = [
 		ingrediente2: 'salami',
 		ingrediente3: 'verdura',
 		extraqueso: 'si',
-		imagen:'../images/10.jpg'
+		imagen:'./images/10.jpg'
 	},
 	{
 		tamanio: 'grande',
@@ -110,7 +110,7 @@ const pizzasInStock = [
 		ingrediente2: 'picante',
 		ingrediente3: 'salami',
 		extraqueso: 'si',
-		imagen:'../images/11.jpg'
+		imagen:'./images/11.jpg'
 	},
 	{ 
         tamanio: 'Personal', 
@@ -120,7 +120,7 @@ const pizzasInStock = [
         ingrediente2: 'carne', 
         ingrediente3: 'verdura', 
         extraqueso: 'no',
-		imagen:'../images/12.jpg' 
+		imagen:'./images/12.jpg' 
     },
 	{
 		tamanio: 'grande',
@@ -130,7 +130,7 @@ const pizzasInStock = [
 		ingrediente2: 'piña',
 		ingrediente3: 'jamon',
 		extraqueso: 'si',
-		imagen:'../images/13.jpg'
+		imagen:'./images/13.jpg'
 	},
 	{
 		tamanio: 'grande',
@@ -140,7 +140,7 @@ const pizzasInStock = [
 		ingrediente2: 'verdura',
 		ingrediente3: 'picante',
 		extraqueso: 'si',
-		imagen:'../images/14.jpg'
+		imagen:'./images/14.jpg'
 	},
 	{
 		tamanio: 'Porción',
@@ -150,7 +150,7 @@ const pizzasInStock = [
 		ingrediente2: 'verdura',
 		ingrediente3: 'Blanco',
 		extraqueso: 'no',
-		imagen:'../images/15.jpg'
+		imagen:'./images/15.jpg'
 	},
 	{ 
         tamanio: 'Mediana', 
@@ -160,6 +160,6 @@ const pizzasInStock = [
         ingrediente2: 'jamon', 
         ingrediente3: 'tomate', 
         extraqueso: 'si',
-		imagen:'../images/16.jpg' 
+		imagen:'./images/16.jpg' 
     }
 ];
